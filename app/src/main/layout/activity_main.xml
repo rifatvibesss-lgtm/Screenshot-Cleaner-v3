@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Screenshot Cleaner" android:textSize="28sp" android:textStyle="bold" />
+        <TextView android:id="@+id/summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Scan your screenshots to find space you can free." android:textSize="15sp" android:paddingTop="6dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="16dp">
+            <Button android:id="@+id/scan" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Scan" />
+            <Button android:id="@+id/pro" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Go Premium" android:layout_marginStart="8dp" />
+        </LinearLayout>
+        <ProgressBar android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="wrap_content" android:visibility="gone" android:paddingTop="8dp" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="12dp">
+        <Button android:id="@+id/all" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Select all" />
+        <Button android:id="@+id/clear" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Clear" />
+        <Button android:id="@+id/delete" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Delete" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+    <TextView android:id="@+id/adPlaceholder" android:layout_width="match_parent" android:layout_height="50dp" android:gravity="center" android:text="Ad space" android:textColor="#888888" />
+</LinearLayout>
